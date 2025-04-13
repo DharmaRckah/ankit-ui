@@ -1,0 +1,229 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bot Alpha Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <div class="sidebar" id="sidebar">
+            <div class="sidebar-header">
+                <div class="logo">
+                    <img src="https://botalpha.biz/img/logo-black.png?v=1.0" alt="Bot Alpha Logo">
+                    <span class="logo-text">BOT ALPHA</span>
+                </div>
+                <button class="toggle-btn" id="sidebarToggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+            
+            <div class="user-profile">
+                <img src="https://botalpha.biz/images/trade.png" alt="User Avatar">
+                <h4>Coder</h4>
+                <p>coder@gmail.com</p>
+            </div>
+            
+            <div class="nav-scrollable">
+                <nav class="nav-menu">
+                    <ul>
+                        <li id="menu-dashboard">
+                            <a href="#dashboard">
+                                <i class="fas fa-th-large"></i>
+                                <span>Dashboard</span>
+                            </a>
+                        </li>
+                        <li id="menu-setting" class="has-submenu">
+                            <a href="#" class="menu-toggle">
+                                <i class="fas fa-cog"></i>
+                                <span>Setting</span>
+                                <i class="fas fa-chevron-right arrow"></i>
+                            </a>
+                            <ul class="submenu">
+                                <li id="submenu-profile"><a href="#profile">Profile</a></li>
+                                <li id="submenu-wallet"><a href="#wallet">Wallet Address</a></li>
+                                <li id="submenu-kyc"><a href="#kyc">Bank KYC</a></li>
+                                <li id="submenu-password"><a href="#password">Set Transaction Password</a></li>
+                            </ul>
+                        </li>
+                        <li id="menu-network" class="has-submenu">
+                            <a href="#" class="menu-toggle">
+                                <i class="fas fa-network-wired"></i>
+                                <span>Network</span>
+                                <i class="fas fa-chevron-right arrow"></i>
+                            </a>
+                            <ul class="submenu">
+                                <li id="submenu-direct-team"><a href="#direct-team">Direct Team</a></li>
+                                <li id="submenu-all-team"><a href="#all-team">All Team</a></li>
+                                <li id="submenu-unilevel"><a href="#unilevel">Unilevel</a></li>
+                                <li id="submenu-business"><a href="#business">Business History</a></li>
+                            </ul>
+                        </li>
+                        <li id="menu-income" class="has-submenu">
+                            <a href="#" class="menu-toggle">
+                                <i class="fas fa-wallet"></i>
+                                <span>Income</span>
+                                <i class="fas fa-chevron-right arrow"></i>
+                            </a>
+                            <ul class="submenu">
+                                <li><a href="#level-income">Level Income</a></li>
+                                <li><a href="#matching-income">Matching Income</a></li>
+                                <li><a href="#staking-matching">Staking Matching Income</a></li>
+                                <li><a href="#ib-income">IB Income</a></li>
+                            </ul>
+                        </li>
+
+                        <li id="menu-robot" class="has-submenu">
+                            <a href="#" class="menu-toggle">
+                                <i class="fas fa-robot"></i>
+                                <span>Robot</span>
+                                <i class="fas fa-chevron-right arrow"></i>
+                            </a>
+                            <ul class="submenu">
+                                <li><a href="#trading-robot">Trading Robot</a></li>
+                                <li><a href="#renewal-robot">Renewal Robot</a></li>
+                                <li><a href="#investment">Investment</a></li>
+                                <li><a href="#portfolio">Portfolio</a></li>
+                            </ul>
+                        </li>
+
+
+                        <li id="menu-robot" class="has-submenu">
+                            <a href="#" class="menu-toggle">
+                                <i class="fas fa-robot"></i>
+                                <span>Staking</span>
+                                <i class="fas fa-chevron-right arrow"></i>
+                            </a>
+                            <ul class="submenu">
+                                <li><a href="#trading-robot">Staking in TLC</a></li>
+                                <li><a href="#renewal-robot">Staking Income</a></li>
+                                <li><a href="#investment">Staking Matching Income</a></li>
+                                <li><a href="#portfolio">Portfolio</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="has-submenu">
+                            <a href="#" class="menu-toggle">
+                                <i class="fas fa-robot"></i>
+                                <span>TLC2.0     <span style="background-color: rgb(247, 43, 80); border-radius: 30%; color: white; padding:2px 6px 4px ;margin-left: 4px;">new</span></span></span>
+                                <i class="fas fa-chevron-right arrow"></i>
+                            </a>
+                            <ul class="submenu">    
+                                <li><a href="#tcl-ico">TCL2.0 ICO</a></li>
+                                <li><a href="#tcl-level-income">TCL2.0 ICO Level Income</a></li>
+                                <li><a href="#tcl-level-income">TCL2.0 Level Income</a></li>
+                                <li><a href="#tcl-profit">TCL2.0 Profit</a></li>
+                            </ul>
+                        </li>
+                        
+                        <li class="has-submenu">
+                            <a href="#" class="menu-toggle">
+                                <i class="fas fa-robot"></i>
+                                <span>Deposit</span>
+                                <i class="fas fa-chevron-right arrow"></i>
+                            </a>
+                            <ul class="submenu">
+                                <li><a href="#deposit-via-gateway">Deposit Via Gateway</a></li>
+                                <li><a href="#deposit-invoices">Deposit Invoices</a></li>
+                                <li><a href="#deposit-crypto">Deposit Crypto</a></li>
+                                <li><a href="#deposit-invoices-crypto">Deposit Invoices (Crypto)</a></li>
+                                <li><a href="#deposit-inr-package">Deposit INR (Package)</a></li>
+                                <li><a href="#deposit-invoice-inr">Deposit Invoice (INR)</a></li>
+                            </ul>
+                        </li>
+
+                        
+                       
+
+
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <header class="navbar">
+                <div class="search-box">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="Search here...">
+                </div>
+                <div class="nav-actions">
+                    <button class="notification-btn">
+                        <i class="fas fa-bell"></i>
+                        <span class="badge">3</span>
+                    </button>
+                    <button class="logout-btn">
+                        <span>Log out</span>
+                        <i class="fas fa-sign-out-alt"></i>
+                    </button>
+                </div>
+            </header>
+            
+            <main class="dashboard-content">
+                <div class="content" id="profile-page">
+                    <div class="breadcrumb">
+                        <span>App</span>
+                        <span>/</span>
+                        <span>Profile</span>
+                    </div>
+                    
+                    <div class="profile-header">
+                        <div class="cover-image">
+                            <img src="https://botalpha.biz/images/profile/cover.jpg" alt="Profile Cover">
+                        </div>
+                        <div class="profile-info">
+                            <img src="https://botalpha.biz/images/trade.png" alt="User Avatar">
+                            <div class="info-text">
+                                <h3>Coder</h3>
+                                <p>India</p>
+                                <p>coder@gmail.com</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="profile-tabs">
+                        <button class="tab-btn active" data-tab="profile">Profile</button>
+                        <button class="tab-btn" data-tab="password">Change Password</button>
+                        <button class="tab-btn" data-tab="email">Update Email</button>
+                    </div>
+                    
+                    <div class="tab-content active" id="profile-tab">
+                        <div class="form-card">
+                            <h2>Edit Profile</h2>
+                            <form class="profile-form">
+                                <div class="form-grid">
+                                    <div class="form-group">
+                                        <label>First Name</label>
+                                        <input type="text" value="Coder">
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Last Name</label>
+                                        <input type="text">
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Country</label>
+                                        <input type="text" value="India">
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Mobile</label>
+                                        <input type="text" value="+91 XXXXXXXXXX">
+                                    </div>
+                                </div>
+                                <button type="submit" class="submit-btn">Save Changes</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
