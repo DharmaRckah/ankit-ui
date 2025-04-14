@@ -133,7 +133,7 @@
 .nav-menu a {
     display: flex;
     align-items: center;
-    padding: 0.75rem 1rem;
+    padding: 1rem 2.5rem;
     color: var(--text-color);
     text-decoration: none;
     transition: all 0.2s;
@@ -173,7 +173,7 @@
 }
 
 .submenu a {
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 3rem;
     font-size: 0.9rem;
 }
 
@@ -580,7 +580,7 @@
     position: absolute;
     top: 1rem;
     right: 1rem;
-    color: var(--red);
+    color: red;
     animation: blink 1s infinite;
 }
 @keyframes blink {
@@ -715,3 +715,129 @@
 }
 
 /* =============================================== */
+/* top content  */
+.dharma_container {
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    background-color: #f4f4f4;
+    min-height: 100vh;
+    box-sizing: border-box;
+  }
+  
+  .dharma_dashboard {
+    max-width: 1200px;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    box-sizing: border-box;
+  }
+  
+  .dharma_top {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1rem;
+    flex-grow: 1;
+    flex-shrink: 1;
+  }
+  
+  .dharma_referral, .dharma_trading_pair, .dharma_user_info {
+    flex: 1 1 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+  
+  .dharma_user_icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+  
+  .dharma_user_info {
+    align-items: flex-start;
+  }
+  
+  .dharma_copy_btn {
+    padding: 0.5rem 1rem;
+    background-color: orange;
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .dharma_main {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .dharma_user_card {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .dharma_avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+  }
+  
+  .dharma_user_details {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .dharma_income_details {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: space-between;
+  }
+  
+  .dharma_income_item {
+    flex: 1 1 150px;
+    background-color: #f9f9f9;
+    padding: 0.5rem;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9rem;
+  }
+  
+  .dharma_totals {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: space-around;
+  }
+  
+  .dharma_total_box {
+    flex: 1 1 250px;
+    background-color: gold;
+    padding: 1rem;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  @media (max-width: 768px) {
+    .dharma_top,
+    .dharma_income_details,
+    .dharma_totals {
+      flex-direction: column;
+      align-items: stretch;
+    }
+  }
