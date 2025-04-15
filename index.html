@@ -1,15 +1,17 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bot Alpha Dashboard</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"><link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo+Play:wght@200..1000&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+
 </head>
+
 <body>
     <div class="container">
         <!-- Sidebar -->
@@ -17,19 +19,23 @@
             <div class="sidebar-header">
                 <div class="logo">
                     <img src="https://botalpha.biz/img/logo-black.png?v=1.0" alt="Bot Alpha Logo">
-                    <span class="logo-text">BOT ALPHA</span>
+
                 </div>
                 <button class="toggle-btn" id="sidebarToggle">
                     <i class="fas fa-bars"></i>
                 </button>
             </div>
-            
-            <div class="user-profile">
-                <img src="https://botalpha.biz/images/trade.png" alt="User Avatar">
-                <h4>Coder</h4>
-                <p>coder@gmail.com</p>
+
+            <div class="user-profile-b">
+                <div class="user-profile">
+                    <img src="https://botalpha.biz/images/trade.png" alt="User  Avatar">
+                    <div class="user-info">
+                        <h4>Hi,<b>Dharmendra</b></h4>
+                        <p>dprajapati15302@gmail.com</p>
+                    </div>
+                </div>
             </div>
-            
+
             <div class="nav-scrollable">
                 <nav class="nav-menu">
                     <ul>
@@ -113,17 +119,18 @@
                         <li class="has-submenu">
                             <a href="#" class="menu-toggle">
                                 <i class="fas fa-robot"></i>
-                                <span>TLC2.0     <span style="background-color: rgb(247, 43, 80); border-radius: 30%; color: white; padding:1px 3px 2px ;margin-left: 6px;">new</span></span></span>
+                                <span>TLC2.0 <span
+                                        style="background-color: rgb(247, 43, 80); border-radius: 30%; color: white; padding:1px 3px 2px ;margin-left: 6px;">new</span></span></span>
                                 <i class="fas fa-chevron-right arrow"></i>
                             </a>
-                            <ul class="submenu">    
+                            <ul class="submenu">
                                 <li><a href="#tcl-ico">TCL2.0 ICO</a></li>
                                 <li><a href="#tcl-level-income">TCL2.0 ICO Level Income</a></li>
                                 <li><a href="#tcl-level-income">TCL2.0 Level Income</a></li>
                                 <li><a href="#tcl-profit">TCL2.0 Profit</a></li>
                             </ul>
                         </li>
-                        
+
                         <li class="has-submenu">
                             <a href="#" class="menu-toggle">
                                 <i class="fas fa-robot"></i>
@@ -140,8 +147,8 @@
                             </ul>
                         </li>
 
-                        
-                       
+
+
 
 
                     </ul>
@@ -151,417 +158,51 @@
 
         <!-- Main Content -->
         <div class="main-content">
+
+
+
             <header class="navbar">
-                <div class="search-box">
-                    <i class="fas fa-search"></i>
-                    <input type="text" placeholder="Search here...">
-                </div>
-                <div class="nav-actions">
-                    <button class="notification-btn">
-                        <i class="fas fa-bell"></i>
-                        <span class="badge">3</span>
-                    </button>
-                    <button class="logout-btn">
-                        <span>Log out</span>
-                        <i class="fas fa-sign-out-alt"></i>
-                    </button>
+                <h1 class="dashboard-title">Dashboard</h1>
+                <div style="display: flex;">
+                    <div class="search-box">
+                        <input type="text" placeholder="Search here...">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <div class="nav-actions">
+                        <button class="notification-btn">
+                            <i class="fas fa-bell"></i>
+                            <span class="badge">3</span>
+                        </button>
+                        <button class="logout-btn">
+                            <span>Log out</span>
+                            <i class="fas fa-sign-out-alt"></i>
+                        </button>
+                    </div>
                 </div>
             </header>
-            
 
 
-            
-            <div class="container">
-                <main class="dashboard-content">
-                    <h1 class="dashboard-title">Dashboard</h1>
 
-                 
-                    <div class="dashboard-section">
-                        <div class="referral-row">
-                            <div class="referral-item">
-                                <p class="label">REFERRAL CODE</p>
-                                <h3 class="ref-code">#ROB0599022</h3>
-                            </div>
-                            <div class="referral-item trading-pair">
-                                <p class="label">
-                                    <!-- <span class="p-star star">✪</span>  -->
-                                    TLC-USD Trading Pair</p>
-                                <p> 1 TLC = 128 USD</p>
-                            </div>
-                            <div class="referral-item">
-                                <p class="label">Name</p>
-                                <p class="ref-name">Rohul Amin</p>
-                            </div>
-                            <div class="referral-item referral-action">
-                                <input type="text" readonly value="http://botalpha.biz/sign" class="ref-link" />
-                                <span class="ref-link-r">Copy Referral Link</span>
-                            </div>
-                        </div>
-                
-                        <div class="profile-income-card">
-                            <div class="profile-box">
-                                <div class="avatar"></div>
-                                <div>
-                                    <h3 class="user-title">Rohul Amin</h3>
-                                    <p class="user-rank">Rank - NA</p>
-                                </div>
-                            </div>
-                
-                            <div class="income-grid">
-                                <div class="income-box"><span>Level Income</span><strong>$127.5</strong></div>
-                                <div class="income-box"><span>Compounding Income</span><strong>$0</strong></div>
-                                <div class="income-box"><span>Club Income</span><strong>$0</strong></div>
-                                <div class="income-box"><span>Matching Income</span><strong>$0</strong></div>
-                                <div class="income-box"><span>Staking Matching Income</span><strong>$0</strong></div>
-                                <div class="income-box"><span>IB Income</span><strong>$0</strong></div>
-                                <div class="income-box"><span>Achievement Income</span><strong>$0</strong></div>
-                                <div class="income-box"><span>Trading Profit Income</span><strong>$0</strong></div>
-                                <div class="income-box"><span>Reward Income</span><strong>$0</strong></div>
-                                <div class="income-box"><span>Staking Income</span><strong>$0</strong></div>
-                            </div>
-                        </div>
-                
-                        <div class="summary-section">
-                            <div class="summary-card">
-                                <p>Total Income</p>
-                                <h2>$1223.4049</h2>
-                            </div>
-                            <div class="summary-card">
-                                <p>Total Withdrawal</p>
-                                <h2>$1009</h2>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Wallet Cards Row -->
-                    <div class="cards-grid three-cols">
-                        <div class="wallet-card">
-                            <div class="card-content">
-                                <div class="icon-circle">
-                                    <i class="fas fa-file-alt"></i>
-                                </div>
-                                <div class="card-info">
-                                    <h3 class="amount">$76.212</h3>
-                                    <p class="label">Income Wallet</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="wallet-card">
-                            <div class="card-content">
-                                <div class="icon-circle">
-                                    <i class="fas fa-check-circle"></i>
-                                </div>
-                                <div class="card-info">
-                                    <h3 class="amount">$0.19</h3>
-                                    <p class="label">Package Wallet</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="wallet-card">
-                            <div class="card-content">
-                                <div class="icon-circle">
-                                    <i class="fas fa-file-alt"></i>
-                                </div>
-                                <div class="card-info">
-                                    <h3 class="amount">$0</h3>
-                                    <p class="label">Topup Wallet</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- TLC Wallet Cards Row -->
-                    <div class="cards-grid two-cols">
-                        <div class="wallet-card">
-                            <div class="card-content">
-                                <div class="icon-circle">
-                                    <i class="fas fa-file-alt"></i>
-                                </div>
-                                <div class="card-info">
-                                    <h3 class="amount">0 TLC</h3>
-                                    <div class="label-with-badge">
-                                        <p class="label">Gift TLC Wallet</p>
-                                        <span class="badge green">$0.00</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="wallet-card">
-                            <div class="card-content">
-                                <div class="icon-circle">
-                                    <i class="fas fa-file-alt"></i>
-                                </div>
-                                <div class="card-info">
-                                    <h3 class="amount">0 TLC</h3>
-                                    <div class="label-with-badge">
-                                        <p class="label">Gift TLC New Wallet</p>
-                                        <span class="badge green">$0.00</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- TLC 2.0 Cards with Blinking Stars -->
-                    <div class="cards-grid four-cols">
-                        <div class="tlc-card">
-                            <div class="card-content">
-                                <div class="icon-circle">
-                                    <i class="fas fa-info"></i>
-                                </div>
-                                <div class="card-info">
-                                    <h3 class="title">TLC 2.0 REDEEM WALLET</h3>
-                                    <div class="blinking-star"><i class="fas fa-star"></i></div>
-                                </div>
-                            </div>
-                            <h2 class="amount">7.5</h2>
-                        </div>
-                        <div class="tlc-card">
-                            <div class="card-content">
-                                <div class="icon-circle">
-                                    <i class="fas fa-info"></i>
-                                </div>
-                                <div class="card-info">
-                                    <h3 class="title">TLC 2.0 STAKE WALLET</h3>
-                                    <div class="blinking-star"><i class="fas fa-star"></i></div>
-                                </div>
-                            </div>
-                            <h2 class="amount">11.25</h2>
-                        </div>
-                        <div class="tlc-card">
-                            <div class="card-content">
-                                <div class="icon-circle">
-                                    <i class="fas fa-info"></i>
-                                </div>
-                                <div class="card-info">
-                                    <h3 class="title">TLC 2.0 WALLET</h3>
-                                    <div class="blinking-star"><i class="fas fa-star"></i></div>
-                                </div>
-                            </div>
-                            <h2 class="amount">1802.1</h2>
-                        </div>
-                        <div class="tlc-card">
-                            <div class="card-content">
-                                <div class="icon-circle">
-                                    <i class="fas fa-info"></i>
-                                </div>
-                                <div class="card-info">
-                                    <h3 class="title">TLC 2.0 ICO WALLET</h3>
-                                    <div class="blinking-star"><i class="fas fa-star"></i></div>
-                                </div>
-                            </div>
-                            <h2 class="amount">1100.44443</h2>
-                        </div>
-                    </div>
-                    <!-- Business Info Section -->
-                    <div class="cards-grid two-cols">
-                        <div class="info-card">
-                            <h3 class="card-title">About Me</h3>
-                            <div class="info-list">
-                                <div class="info-item">
-                                    <span class="label">Referral ID</span>
-                                    <span class="value">ROB0223929</span>
-                                </div>
-                                <div class="info-item">
-                                    <span class="label">Subscription</span>
-                                    <span class="value">$125</span>
-                                </div>
-                                <div class="info-item">
-                                    <span class="label">Trading Package</span>
-                                    <span class="value">$0.0000</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="info-card">
-                            <h3 class="card-title">Business History</h3>
-                            <div class="info-list">
-                                <div class="info-item">
-                                    <span class="label">Direct Bot</span>
-                                    <span class="value">3</span>
-                                </div>
-                                <div class="info-item">
-                                    <span class="label">Total Bot</span>
-                                    <span class="value">21</span>
-                                </div>
-                                <div class="info-item">
-                                    <span class="label">Team Trading Business</span>
-                                    <span class="value">$15617.0000</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- TLC Staking Info -->
-                    <div class="info-card">
-                        <div class="info-item">
-                            <span class="label">TLC Staking Business(Left/Right)</span>
-                            <span class="value">0/0</span>
-                        </div>
-                        <div class="info-item">
-                            <span class="label">TLC Staking CarryForward(Left/Right)</span>
-                            <span class="value">0/0</span>
-                        </div>
-                    </div>
-                    <!-- Currency Exchange Table -->
-                    <div class="currency-table-wrapper">
-                        <table class="currency-table">
-                            <thead>
-                                <tr>
-                                    <th></th>
-                                    <th><span class="currency-icon blue">€</span>EUR</th>
-                                    <th><span class="currency-icon blue">$</span>USD</th>
-                                    <th><span class="currency-icon red">¥</span>JPY</th>
-                                    <th><span class="currency-icon blue">£</span>GBP</th>
-                                    <th><span class="currency-icon red">Fr</span>CHF</th>
-                                    <th><span class="currency-icon blue">A$</span>AUD</th>
-                                    <th><span class="currency-icon red">C$</span>CAD</th>
-                                    <th><span class="currency-icon blue">NZ$</span>NZD</th>
-                                    <th><span class="currency-icon red">¥</span>CNY</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <!-- Sample row -->
-                                <tr>
-                                    <td><span class="currency-icon blue">€</span>EUR</td>
-                                    <td class="bg-gray">-</td>
-                                    <td class="bg-green">1.13860</td>
-                                    <td>162.545</td>
-                                    <td class="bg-red">0.86745</td>
-                                    <td class="bg-red">0.92950</td>
-                                    <td class="bg-green">1.80632</td>
-                                    <td class="bg-green">1.57788</td>
-                                    <td class="bg-green">1.94402</td>
-                                    <td class="bg-green">8.3133</td>
-                                </tr>
-                                <tr>
-                                    <td><span class="currency-icon blue">€</span>EUR</td>
-                                    <td class="bg-gray">-</td>
-                                    <td class="bg-green">1.13860</td>
-                                    <td>162.545</td>
-                                    <td class="bg-red">0.86745</td>
-                                    <td class="bg-red">0.92950</td>
-                                    <td class="bg-green">1.80632</td>
-                                    <td class="bg-green">1.57788</td>
-                                    <td class="bg-green">1.94402</td>
-                                    <td class="bg-green">8.3133</td>
-                                </tr>
-                                <tr>
-                                    <td><span class="currency-icon blue">€</span>EUR</td>
-                                    <td class="bg-gray">-</td>
-                                    <td class="bg-green">1.13860</td>
-                                    <td>162.545</td>
-                                    <td class="bg-red">0.86745</td>
-                                    <td class="bg-red">0.92950</td>
-                                    <td class="bg-green">1.80632</td>
-                                    <td class="bg-green">1.57788</td>
-                                    <td class="bg-green">1.94402</td>
-                                    <td class="bg-green">8.3133</td>
-                                </tr>
-                                <tr>
-                                    <td><span class="currency-icon blue">€</span>EUR</td>
-                                    <td class="bg-gray">-</td>
-                                    <td class="bg-green">1.13860</td>
-                                    <td>162.545</td>
-                                    <td class="bg-red">0.86745</td>
-                                    <td class="bg-red">0.92950</td>
-                                    <td class="bg-green">1.80632</td>
-                                    <td class="bg-green">1.57788</td>
-                                    <td class="bg-green">1.94402</td>
-                                    <td class="bg-green">8.3133</td>
-                                </tr>
-                                <tr>
-                                    <td><span class="currency-icon blue">€</span>EUR</td>
-                                    <td class="bg-gray">-</td>
-                                    <td class="bg-green">1.13860</td>
-                                    <td>162.545</td>
-                                    <td class="bg-red">0.86745</td>
-                                    <td class="bg-red">0.92950</td>
-                                    <td class="bg-green">1.80632</td>
-                                    <td class="bg-green">1.57788</td>
-                                    <td class="bg-green">1.94402</td>
-                                    <td class="bg-green">8.3133</td>
-                                </tr>
-                                <tr>
-                                    <td><span class="currency-icon blue">€</span>EUR</td>
-                                    <td class="bg-gray">-</td>
-                                    <td class="bg-green">1.13860</td>
-                                    <td>162.545</td>
-                                    <td class="bg-red">0.86745</td>
-                                    <td class="bg-red">0.92950</td>
-                                    <td class="bg-green">1.80632</td>
-                                    <td class="bg-green">1.57788</td>
-                                    <td class="bg-green">1.94402</td>
-                                    <td class="bg-green">8.3133</td>
-                                </tr>
-                                <tr>
-                                    <td><span class="currency-icon blue">€</span>EUR</td>
-                                    <td class="bg-gray">-</td>
-                                    <td class="bg-green">1.13860</td>
-                                    <td>162.545</td>
-                                    <td class="bg-red">0.86745</td>
-                                    <td class="bg-red">0.92950</td>
-                                    <td class="bg-green">1.80632</td>
-                                    <td class="bg-green">1.57788</td>
-                                    <td class="bg-green">1.94402</td>
-                                    <td class="bg-green">8.3133</td>
-                                </tr>
-                                <tr>
-                                    <td><span class="currency-icon blue">€</span>EUR</td>
-                                    <td class="bg-gray">-</td>
-                                    <td class="bg-green">1.13860</td>
-                                    <td>162.545</td>
-                                    <td class="bg-red">0.86745</td>
-                                    <td class="bg-red">0.92950</td>
-                                    <td class="bg-green">1.80632</td>
-                                    <td class="bg-green">1.57788</td>
-                                    <td class="bg-green">1.94402</td>
-                                    <td class="bg-green">8.3133</td>
-                                </tr>
-                                <tr>
-                                    <td><span class="currency-icon blue">€</span>EUR</td>
-                                    <td class="bg-gray">-</td>
-                                    <td class="bg-green">1.13860</td>
-                                    <td>162.545</td>
-                                    <td class="bg-red">0.86745</td>
-                                    <td class="bg-red">0.92950</td>
-                                    <td class="bg-green">1.80632</td>
-                                    <td class="bg-green">1.57788</td>
-                                    <td class="bg-green">1.94402</td>
-                                    <td class="bg-green">8.3133</td>
-                                </tr>
-                                <tr>
-                                    <td><span class="currency-icon blue">€</span>EUR</td>
-                                    <td class="bg-gray">-</td>
-                                    <td class="bg-green">1.13860</td>
-                                    <td>162.545</td>
-                                    <td class="bg-red">0.86745</td>
-                                    <td class="bg-red">0.92950</td>
-                                    <td class="bg-green">1.80632</td>
-                                    <td class="bg-green">1.57788</td>
-                                    <td class="bg-green">1.94402</td>
-                                    <td class="bg-green">8.3133</td>
-                                </tr>
-                                <tr>
-                                    <td><span class="currency-icon blue">€</span>EUR</td>
-                                    <td class="bg-gray">-</td>
-                                    <td class="bg-green">1.13860</td>
-                                    <td>162.545</td>
-                                    <td class="bg-red">0.86745</td>
-                                    <td class="bg-red">0.92950</td>
-                                    <td class="bg-green">1.80632</td>
-                                    <td class="bg-green">1.57788</td>
-                                    <td class="bg-green">1.94402</td>
-                                    <td class="bg-green">8.3133</td>
-                                </tr>
-                                
-                                <!-- Add more rows as needed -->
-                            </tbody>
-                        </table>
-                    </div>
-                </main>
+
+            <div class="container" style="overflow-y: scroll; height: 100vh;">
+                <!-- implement here  -->
+                <div id="dynamic-content"></div>
             </div>
-
-
-        
+            <footer class="footer">
+                <div class="footer-content">
+                    <p>&copy; 2025 Bot Alpha. All rights reserved.</p>
+                    <ul class="footer-links">
+                        <li><a href="#privacy-policy">Privacy Policy</a></li>
+                        <li><a href="#terms-of-service">Terms of Service</a></li>
+                        <li><a href="#contact">Contact Us</a></li>
+                    </ul>
+                </div>
+            </footer>
         </div>
     </div>
-    
+
     <script src="script.js"></script>
+
 </body>
+
 </html>

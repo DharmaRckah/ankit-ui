@@ -67,4 +67,14 @@ document.addEventListener('DOMContentLoaded', function() {
             alert('Profile updated successfully!');
         });
     }
+
+
+
+    // Fetch content from h2.html
+    fetch('h2.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('dynamic-content').innerHTML = data; // Fixed the ID here
+        })
+        .catch(error => console.error('Error loading h2.html:', error));
 });
