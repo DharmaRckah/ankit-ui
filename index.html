@@ -1,34 +1,47 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bot Alpha Dashboard</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"><link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo+Play:wght@200..1000&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 </head>
+
 <body>
-    <div class="container">
-        <!-- Sidebar -->
-        <div class="sidebar" id="sidebar">
-            <div class="sidebar-header">
+    <button id="mobileMenuToggle" class="mobile-toggle-btn">
+        <i class="fas fa-bars"></i>
+      </button>
+      
+
+    <div class="container" >
+      
+        <div class="sidebar" id="sidebar" style="background-color: #ffc107;">
+            <div class="sidebar-header" style="background-color: #ffc107;">
                 <div class="logo">
                     <img src="https://botalpha.biz/img/logo-black.png?v=1.0" alt="Bot Alpha Logo">
-                    <span class="logo-text">BOT ALPHA</span>
+
                 </div>
                 <button class="toggle-btn" id="sidebarToggle">
                     <i class="fas fa-bars"></i>
                 </button>
             </div>
-            
-            <div class="user-profile">
-                <img src="https://botalpha.biz/images/trade.png" alt="User Avatar">
-                <h4>Coder</h4>
-                <p>coder@gmail.com</p>
+
+            <div class="user-profile-b">
+                <div class="user-profile">
+                    <img src="https://botalpha.biz/images/trade.png" alt="User  Avatar">
+                    <div class="user-info">
+                        <h4>Hi,<b>Dharmendra</b></h4>
+                        <p style="font-size: x-small; font-weight: bold; color: black;">dprajapati15302@gmail.com</p>
+                    </div>
+                </div>
             </div>
-            
+
             <div class="nav-scrollable">
                 <nav class="nav-menu">
                     <ul>
@@ -107,20 +120,23 @@
                             </ul>
                         </li>
 
+
+
                         <li class="has-submenu">
                             <a href="#" class="menu-toggle">
                                 <i class="fas fa-robot"></i>
-                                <span>TLC2.0     <span style="background-color: rgb(247, 43, 80); border-radius: 30%; color: white; padding:2px 6px 4px ;margin-left: 4px;">new</span></span></span>
+                                <span>TLC2.0 <span
+                                        style="background-color: rgb(247, 43, 80); border-radius: 30%; color: white; padding:1px 3px 2px ;margin-left: 6px;">new</span></span></span>
                                 <i class="fas fa-chevron-right arrow"></i>
                             </a>
-                            <ul class="submenu">    
+                            <ul class="submenu">
                                 <li><a href="#tcl-ico">TCL2.0 ICO</a></li>
                                 <li><a href="#tcl-level-income">TCL2.0 ICO Level Income</a></li>
                                 <li><a href="#tcl-level-income">TCL2.0 Level Income</a></li>
                                 <li><a href="#tcl-profit">TCL2.0 Profit</a></li>
                             </ul>
                         </li>
-                        
+
                         <li class="has-submenu">
                             <a href="#" class="menu-toggle">
                                 <i class="fas fa-robot"></i>
@@ -137,8 +153,8 @@
                             </ul>
                         </li>
 
-                        
-                       
+
+
 
 
                     </ul>
@@ -146,84 +162,53 @@
             </div>
         </div>
 
-        <!-- Main Content -->
+       
         <div class="main-content">
-            <header class="navbar">
-                <div class="search-box">
-                    <i class="fas fa-search"></i>
-                    <input type="text" placeholder="Search here...">
-                </div>
-                <div class="nav-actions">
-                    <button class="notification-btn">
-                        <i class="fas fa-bell"></i>
-                        <span class="badge">3</span>
-                    </button>
-                    <button class="logout-btn">
-                        <span>Log out</span>
-                        <i class="fas fa-sign-out-alt"></i>
-                    </button>
+
+
+
+            <header class="navbar" >
+                <h1 class="dashboard-title">Dashboard</h1>
+                <div style="display: flex;">
+                    <div class="search-box">
+                        <input type="text" placeholder="Search here...">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <div class="nav-actions">
+                        <button class="notification-btn">
+                            <i class="fas fa-bell"></i>
+                            <span class="badge">3</span>
+                        </button>
+                        <button class="logout-btn">
+                            <span>Log out</span>
+                            <i class="fas fa-sign-out-alt"></i>
+                        </button>
+                    </div>
                 </div>
             </header>
+
+
+
+
+            <div class="container" style="overflow-y: scroll; height: 100vh;">
             
-            <main class="dashboard-content">
-                <div class="content" id="profile-page">
-                    <div class="breadcrumb">
-                        <span>App</span>
-                        <span>/</span>
-                        <span>Profile</span>
-                    </div>
-                    
-                    <div class="profile-header">
-                        <div class="cover-image">
-                            <img src="https://botalpha.biz/images/profile/cover.jpg" alt="Profile Cover">
-                        </div>
-                        <div class="profile-info">
-                            <img src="https://botalpha.biz/images/trade.png" alt="User Avatar">
-                            <div class="info-text">
-                                <h3>Coder</h3>
-                                <p>India</p>
-                                <p>coder@gmail.com</p>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="profile-tabs">
-                        <button class="tab-btn active" data-tab="profile">Profile</button>
-                        <button class="tab-btn" data-tab="password">Change Password</button>
-                        <button class="tab-btn" data-tab="email">Update Email</button>
-                    </div>
-                    
-                    <div class="tab-content active" id="profile-tab">
-                        <div class="form-card">
-                            <h2>Edit Profile</h2>
-                            <form class="profile-form">
-                                <div class="form-grid">
-                                    <div class="form-group">
-                                        <label>First Name</label>
-                                        <input type="text" value="Coder">
-                                    </div>
-                                    <div class="form-group">
-                                        <label>Last Name</label>
-                                        <input type="text">
-                                    </div>
-                                    <div class="form-group">
-                                        <label>Country</label>
-                                        <input type="text" value="India">
-                                    </div>
-                                    <div class="form-group">
-                                        <label>Mobile</label>
-                                        <input type="text" value="+91 XXXXXXXXXX">
-                                    </div>
-                                </div>
-                                <button type="submit" class="submit-btn">Save Changes</button>
-                            </form>
-                        </div>
-                    </div>
+                <div id="dynamic-content"></div>
+            </div>
+            <footer class="footer">
+                <div class="footer-content">
+                    <p>&copy; 2025 Bot Alpha. All rights reserved.</p>
+                    <ul class="footer-links">
+                        <li><a href="#privacy-policy">Privacy Policy</a></li>
+                        <li><a href="#terms-of-service">Terms of Service</a></li>
+                        <li><a href="#contact">Contact Us</a></li>
+                    </ul>
                 </div>
-            </main>
+            </footer>
         </div>
     </div>
-    
+
     <script src="script.js"></script>
+
 </body>
+
 </html>
